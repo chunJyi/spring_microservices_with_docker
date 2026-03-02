@@ -7,6 +7,7 @@ import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 
 @SpringBootApplication(
         scanBasePackages = {
+
                 "com.tc.springmicroservice.notification",
                 "com.tc.springmicroservice.clients.notification",
                 "com.tc.springmicroservice.amqp",
