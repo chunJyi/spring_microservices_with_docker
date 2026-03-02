@@ -1,0 +1,4 @@
+com\tc\springmicroservice\clients\notification\NotificationClient.class
+com\tc\springmicroservice\clients\fraud\FraudClient.class
+com\tc\springmicroservice\clients\fraud\FraudCheckResponse.class
+com\tc\springmicroservice\clients\notification\NotificationRequest.class

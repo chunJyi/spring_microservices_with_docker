@@ -1,0 +1,7 @@
+com\tc\springmicroservice\customer\model\CustomerRegistrationRequest.class
+com\tc\springmicroservice\customer\model\Customer$CustomerBuilder.class
+com\tc\springmicroservice\customer\CustomerApplication.class
+com\tc\springmicroservice\customer\service\CustomerService.class
+com\tc\springmicroservice\customer\repository\CustomerRepository.class
+com\tc\springmicroservice\customer\controller\CustomerController.class
+com\tc\springmicroservice\customer\model\Customer.class

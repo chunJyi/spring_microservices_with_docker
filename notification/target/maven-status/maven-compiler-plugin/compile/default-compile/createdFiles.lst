@@ -1,0 +1,9 @@
+com\tc\springmicroservice\notification\service\NotificationService.class
+com\tc\springmicroservice\notification\NotificationApplication.class
+com\tc\springmicroservice\notification\notificationConfig\NotificationConfig.class
+com\tc\springmicroservice\notification\model\Notification$NotificationBuilder.class
+com\tc\springmicroservice\notification\model\Notification.class
+com\tc\springmicroservice\notification\consumer\NotificationConsumer.class
+com\tc\springmicroservice\notification\controller\NotificationController.class
+com\tc\springmicroservice\notification\notificationConfig\RabbitMessageConverterConfig.class
+com\tc\springmicroservice\notification\repository\NotificationRepository.class

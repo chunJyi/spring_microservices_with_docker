@@ -1,0 +1,55 @@
+version: "3.9"
+
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    environment:
+      - STORAGE_TYPE=mem
+
+  rabbitmq:
+    image: rabbitmq:3.12.3-management-alpine  # Alpine variant with management UI    container_name: rabbitmq
+    ports:
+      - "5672:5672"   # AMQP protocol for your apps
+      - "15672:15672" # Management web UI
+    environment:
+      RABBITMQ_DEFAULT_USER: user      # default username
+      RABBITMQ_DEFAULT_PASS: password  # default password
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    restart: unless-stopped
+
+volumes:
+  rabbitmq-data:
+#  postgres:
+#    image: postgres:16
+#    container_name: postgres-db
+#    restart: always
+#    environment:
+#      POSTGRES_USER: admin
+#      POSTGRES_PASSWORD: secret
+#      POSTGRES_DB: customer
+#      TZ: Asia/Yangon
+#      PGTZ: Asia/Yangon
+#      JAVA_OPTS: "-Duser.timezone=Asia/Yangon"
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/data
+#
+#  pgadmin:
+#    image: dpage/pgadmin4
+#    container_name: pgadmin
+#    restart: always
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: admin@example.com
+#      PGADMIN_DEFAULT_PASSWORD: admin
+#    ports:
+#      - "5050:80"
+#    depends_on:
+#      - postgres
+#
+#volumes:
+#  postgres_data:

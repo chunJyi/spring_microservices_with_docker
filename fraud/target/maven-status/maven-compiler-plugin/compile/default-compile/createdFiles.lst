@@ -1,0 +1,6 @@
+com\tc\springmicroservice\model\FraudCheckHistory$FraudCheckHistoryBuilder.class
+com\tc\springmicroservice\model\FraudCheckHistory.class
+com\tc\springmicroservice\repository\FraudCheckHistoryRepository.class
+com\tc\springmicroservice\FraudApplication.class
+com\tc\springmicroservice\service\FraudCheckService.class
+com\tc\springmicroservice\controller\FraudController.class
